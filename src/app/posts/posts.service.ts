@@ -29,7 +29,8 @@ export class PostsService {
     }
 
     update(post: IPost):Observable<IPost> {
-        return this.http.put<IPost>(this.postsUrl,post,httpOptions);
+        const url = `${this.postsUrl}/${post.id}`;
+        return this.http.put<IPost>(url,post,httpOptions);
     }
 
     add(post: IPost):Observable<IPost> {
