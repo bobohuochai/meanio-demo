@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home';
 import { ReactComponent } from './react';
+import { DatatableComponent } from './datatable';
 import { ProfileComponent } from './profile';
 //import { angularProfileCard } from '../../components/main-profile/index';
 import { NoContentComponent } from './no-content';
@@ -12,5 +13,6 @@ export const ROUTES: Routes = [
   { path: 'posts', loadChildren: './posts#PostsModule' },
   { path: 'profile', component: ProfileComponent },
   { path: 'react', component: ReactComponent },
+  { path: 'datatable',component: DatatableComponent },
   { path: '**',    component: NoContentComponent },
 ];

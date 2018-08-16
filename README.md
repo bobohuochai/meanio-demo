@@ -15,8 +15,8 @@
 
 * mock server 代替 mongoDb
 
-* ui-router, ngTable 升级
+* ui-router, ~~ngTable 升级~~,用ngx-datatable代替
 
 * angular material 代替 angularjs material 
 
-* 集成高德地图, socket.io,redis.
+* 集成高德地图, socket.io,redis

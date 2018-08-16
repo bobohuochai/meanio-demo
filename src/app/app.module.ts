@@ -21,6 +21,7 @@ import {
   MatGridListModule
 } from '@angular/material';
 import 'hammerjs';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -34,7 +35,8 @@ import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
 import { ReactComponent } from './react';
 import { ProfileComponent } from './profile';
-//import { angularProfileCard } from '../../components/main-profile/index';
+import { DatatableComponent } from './datatable';
+// import { angularProfileCard } from '../../components/main-profile/index';
 import { NoContentComponent } from './no-content';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -62,6 +64,7 @@ type StoreType = {
     AppComponent,
     HomeComponent,
     ReactComponent,
+    DatatableComponent,
     ProfileComponent,
     NoContentComponent,
   ],
@@ -78,7 +81,9 @@ type StoreType = {
     MatCardModule,
     MatListModule,
     MatGridListModule,
-    RouterModule.forRoot(ROUTES, { useHash: false}),//lazy loading feature module:remove preloadingStrategy :preloadALlModules.  
+    NgxDatatableModule,
+    RouterModule.forRoot(ROUTES, { useHash: false}),
+    // lazy loading feature module:remove preloadingStrategy :preloadALlModules.
     // ApolloModule.forRoot(client),
   ],
   /**
@@ -94,7 +99,7 @@ export class AppModule {
   constructor(
     public appRef: ApplicationRef,
     public appState: AppState
-  ) { 
+  ) {
 
   }
 

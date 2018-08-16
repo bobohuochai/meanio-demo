@@ -17,6 +17,10 @@ nav a {
   text-decoration: none;
   border-radius: 4px;
 }
+//ngx-datatable themeing using <ngx-datatable class="material">
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
 
 @import '~@angular/material/_theming';
 

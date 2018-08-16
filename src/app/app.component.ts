@@ -24,7 +24,8 @@ import { PostsService } from './posts/posts.service';
         <a [routerLink]="['/']" class="logotTxt">MEAN</a>
         <a class="links" [routerLink]="['/posts']">Posts</a>
         <a class="links" [routerLink]="['/react']">React</a>
-        <a class="links" href="/api/graphql">GraphQL browser</a>        
+        <a class="links" href="/api/graphql">GraphQL browser</a>
+        <a class="links" [routerLink]="['/datatable']">Datatable</a>       
       </mat-toolbar>
     </header>
     <router-outlet></router-outlet>

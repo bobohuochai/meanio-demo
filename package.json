@@ -87,6 +87,7 @@
     "@angular/upgrade": "^6.0.0",
     "@angularclass/hmr": "~1.2.2",
     "@angularclass/hmr-loader": "~3.0.2",
+    "@swimlane/ngx-datatable": "^13.1.0",
     "app-root-path": "^2.0.1",
     "babel-cli": "^6.24.1",
     "body-parser": "^1.17.2",
